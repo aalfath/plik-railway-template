@@ -35,6 +35,9 @@ export PLIKD_MAX_TTL_STR="${PLIKD_MAX_TTL_STR:-30d}"
 # Store-only zip archives: no CPU-heavy compression on a small instance.
 export PLIKD_ENABLE_ARCHIVE_COMPRESSION="${PLIKD_ENABLE_ARCHIVE_COMPRESSION:-false}"
 
+# Railway serves every domain over HTTPS: send HSTS and Secure session cookies.
+export PLIKD_ASSUME_HTTPS="${PLIKD_ASSUME_HTTPS:-true}"
+
 # Behind Railway's proxy: log the real client address.
 export PLIKD_SOURCE_IP_HEADER="${PLIKD_SOURCE_IP_HEADER:-X-Real-IP}"
 
